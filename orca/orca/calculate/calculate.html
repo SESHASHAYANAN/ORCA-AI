@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ORCA AI</title>
+        <link rel="stylesheet" href="./calculate.css">
+    
+    </head>
+    <body>
+        <body>
+            <div class="sidebar">
+                <div class="sidebar-header homeButton" >
+                    <h2 class="homeButton" id="homeButton">ORCA AI</h2>
+                </div>
+                <ul class="sidebar-menu">
+                    <li class="sidebar-item active">
+                        <a href="#" id="redirectButton">HOME</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" id="calculate">CALCULATE</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" id="scoreboard">SCOREBOARD</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" id="buy">BUY</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" id="education">EDUCATION</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" id="connect">CONNECT</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" id="search">SEARCH</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" id="profile">PROFILE</a>
+                    </li> 
+
+                </ul>
+                <div class="sidebar-footer">
+                    <button class="logout-button">Log out</button>
+                </div>
+            </div>
+            <div class="main-content">
+                
+                <h1  class="welcome">CALCULATE</h1>
+                <br>
+                <div class="content">
+                    <div class="calculate-container">
+                        <h2>How did you travel today?</h2>
+                        <div class="flashcards">
+                            <div class="flashcard">
+                                <h3>Office</h3>
+                                <select id="travelToOffice">
+                                    <option value="0">I travelled on...</option>
+                                    <option value="0.5">Bicycle</option>
+                                    <option value="1">Bus</option>
+                                    <option value="2">Car</option>
+                                    <option value="0.7">Carpooling</option>
+                                    <option value="0.2">Walking</option>
+                                </select>
+                                <p>Instead of</p>
+                                <select id="insteadOfOffice">
+                                    <option value="2">Car</option>
+                                    <option value="0.5">Bicycle</option>
+                                    <option value="1">Bus</option>
+                                    <option value="0.7">Carpooling</option>
+                                    <option value="0.2">Walking</option>
+                                </select>
+                            </div>
+                            <div class="flashcard">
+                                <h3>Return</h3>
+                                <select id="travelToReturn">
+                                    <option value="0">I travelled on...</option>
+                                    <option value="0.5">Bicycle</option>
+                                    <option value="1">Bus</option>
+                                    <option value="2">Car</option>
+                                    <option value="0.7">Carpooling</option>
+                                    <option value="0.2">Walking</option>
+                                </select>
+                                <p>Instead of</p>
+                                <select id="insteadOfReturn">
+                                    <option value="2">Car</option>
+                                    <option value="0.5">Bicycle</option>
+                                    <option value="1">Bus</option>
+                                    <option value="0.7">Carpooling</option>
+                                    <option value="0.2">Walking</option>
+                                </select>
+                            </div>
+                            <div class="flashcard">
+                                <h3>Additional</h3>
+                                <select id="travelToExtra">
+                                    <option value="0">I travelled on...</option>
+                                    <option value="0.5">Bicycle</option>
+                                    <option value="1">Bus</option>
+                                    <option value="2">Car</option>
+                                    <option value="0.7">Carpooling</option>
+                                    <option value="0.2">Walking</option>
+                                </select>
+                                <p>Instead of</p>
+                                <select id="insteadOfExtra">
+                                    <option value="2">Car</option>
+                                    <option value="0.5">Bicycle</option>
+                                    <option value="1">Bus</option>
+                                    <option value="0.7">Carpooling</option>
+                                    <option value="0.2">Walking</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <br>
+                            <h2>What did you eat today?</h2>
+                            <select id="foodOption">
+                                <option value="0">Select a food...</option>
+                                <option value="0.1">Vegetarian Meal</option>
+                                <option value="0.3">Non-Vegetarian Meal</option>
+                                <option value="0.05">Vegan Meal</option>
+                            </select>
+                            <p id="foodSaved">Total saved by eating: 0.00 pounds </p>
+                        </div>
+                        <div>
+                            <h2>What did you buy today?</h2>
+                            <select id="purchaseOption">
+                                <option value="0">Select an item...</option>
+                                <option value="0.2">Clothes</option>
+                                <option value="0.5">Electronics</option>
+                                <option value="0.1">Groceries</option>
+                            </select>
+                            <p id="purchaseSaved">Total saved by buying: 0.00 pounds </p>
+                        </div>
+                        <button onclick="calculateTotalSavings()">Calculate Total Savings</button>
+                        <p id="totalSaved">Total CO<sub>2</sub> saved today: 0.00 pounds </p>
+
+                    </div>
+                    
+
+                </div>
+      
+                 
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script src="./calculate.js"></script>
+    </body>
+</html>

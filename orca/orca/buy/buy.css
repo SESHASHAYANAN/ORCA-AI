@@ -1,0 +1,306 @@
+body{
+    background-color: rgb(204, 156, 79);
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: rgb(253, 251, 251);
+}
+
+.home{
+    align-items: center;
+    text-align: center;
+    font-family: cursive;
+}
+
+.welcome{
+    align-items: center;
+    text-align: center;
+    font-family:cursive;
+    
+    font-weight: 300px;
+
+}
+.sidebar {
+    width: 250px;
+    background-color: #2b2b2b;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.earthpic{
+    margin-bottom: 0px;
+    margin-left: 630px;
+    float: left;
+    
+}
+
+.text-content {
+    align-items: center;
+    text-align: center;
+    font-family:cursive;
+    font-size: small;
+    font-weight: 300px;
+}
+.sidebar-header {
+    padding: 20px;
+    background-color: #3c3c3c;
+    text-align: center;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-item {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-item a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sidebar-item:hover,
+.sidebar-item.active {
+    background-color: #3c3c3c;
+}
+
+.sidebar-footer {
+    padding: 20px;
+    background-color: #3c3c3c;
+    text-align: center;
+}
+.sidebar-item{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.logout-button {
+    padding: 10px 20px;
+    background-color: #4b4b4b;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #5c5c5c;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.main-content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Flashcard container and flashcard styles */
+.flashcard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.flashcard {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flashcard:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.flashcard img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-info {
+    margin-top: 10px;
+}
+
+.product-info h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product-info p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Product detail page styles */
+.product-detail {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: #f8f8f8;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-detail img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.product-detail h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.product-detail p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.product-detail .buy-now {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.product-detail .buy-now:hover {
+    background-color: #555;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit; /* Ensures that links have the same color as their parent elements */
+}
+
+a:hover {
+    color: blue; /* Optional: Change the color on hover if needed */
+}
+
+
+.message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: green;
+    display: none;
+}
+
+
+
+
+
+
+
+.product {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.product-info {
+    max-width: 300px;
+}
+
+.product-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.buy-now-btn, .add-to-cart-btn {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.buy-now-btn:hover, .add-to-cart-btn:hover {
+    background-color: #cc7a00;
+}
+
+.product-description {
+    max-width: 490px;
+    text-align: center;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: green;
+    display: none;
+}
+
+.product {
+    gap: 50px; /* Reduce the gap between product details and description */
+}
+
+.product-image {
+    margin-right: 10px; /* Reduce the right margin of the product image */
+}
+.product-info{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.maindes{
+    text-align: center;
+}
+

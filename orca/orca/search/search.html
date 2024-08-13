@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORCA AI</title>
+    <link rel="stylesheet" href="./search.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header homeButton">
+            <h2 id="homeButton">ORCA AI</h2>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-item active">
+                <a href="#" id="redirectButton">HOME</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" id="calculate">CALCULATE</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" id="scoreboard">SCOREBOARD</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" id="buy">BUY</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" id="education">EDUCATION</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" id="connect">CONNECT</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" id="search">SEARCH</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" id="profile">PROFILE</a>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <button class="logout-button">Log out</button>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <div class="search-container">
+                <h1>SEARCH</h1>
+            </div>
+            <h2>Plant Identifier</h2>
+            <label for="imageUpload">Upload Plant Image:</label>
+            <input type="file" id="imageUpload" accept="image/*">
+            <button onclick="identifyPlant()" class="button" aria-label="Identify Plant">Identify Plant</button>
+            <img id="imagePreview" src="" alt="Uploaded plant image" style="display:none;">
+            <div id="result"></div>
+            <div id="savedPlants"></div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./search.js"></script>
+</body>
+
+</html>
