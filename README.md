@@ -1,7 +1,7 @@
 # ORCA AI
-Here's a detailed pitch for the project Orca:
+Here's a detailed pitch for Orca:
 
-Hello everyone, my name is Sesha, and today, I'm excited to present to you a groundbreaking web application called ORCA AI. ORCA AI is more than just an app—it's a movement, a platform designed to unite users from around the world in a shared mission to save our planet.
+ I'm excited to present to you a groundbreaking web application called ORCA AI. ORCA AI is more than just an app—it's a movement, a platform designed to unite users from around the world in a shared mission to save our planet and world.
 
 Abstract and the Need for ORCA AI
 Let’s begin with the abstract and the underlying need for this application. In today’s world, despite the increasing awareness of environmental issues, there is still no comprehensive, sustainable platform where users can come together, track their efforts to reduce their carbon footprint and make sustainable choices effortlessly. This gap is what ORCA AI aims to fill.
