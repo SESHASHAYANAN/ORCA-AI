@@ -1,5 +1,5 @@
 # ORCA AI
-Here's a  pitch for Orca:
+Here's a pitch for Orca:
 
  I'm excited to present to you a groundbreaking web application called ORCA AI. ORCA AI is more than just an app—it's a movement, a platform designed to unite users from around the world in a shared mission to save our planet and world.
 
